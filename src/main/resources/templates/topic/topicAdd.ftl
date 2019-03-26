@@ -28,15 +28,15 @@
 	    		   
 	    		   if($("#type").val()!="作文" ) {
 	    			   if($("#a").val()==null||$("#a").val()=="") {
-		    			   layer.msg("题目a不能为空");
+		    			   layer.msg("答案A不能为空");
 		    			   return false;
 		    		   }
 		    		   if($("#b").val()==null||$("#b").val()=="") {
-		    			   layer.msg("题目b不能为空");
+		    			   layer.msg("答案B不能为空");
 		    			   return false;
 		    		   }
 		    		   if($("#c").val()==null||$("#c").val()=="") {
-		    			   layer.msg("题目c不能为空");
+		    			   layer.msg("答案C不能为空");
 		    			   return false;
 		    		   }
 	    			   if($("#success").val()==null ||$("#success").val()=="") {
@@ -44,10 +44,10 @@
 		    			   return false;
 		    		   }
 	    		   }
-    			   
+
                   $('#from1').attr("action", "/topic/save1");
                   $('#from1').submit();
-                  
+
                   $('#from2').attr("action", "/topic/save2");
                   $('#from2').submit();
               });

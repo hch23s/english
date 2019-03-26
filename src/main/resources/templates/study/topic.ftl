@@ -111,7 +111,7 @@
 		          
 	          <#else>
 				<div style="margin-top:20px;margin-left:35px">
-				不好意思，暂时没有该类型的题目
+				不好意思，暂时没有听力题，请联系管理员添加
 				</div>
 	          </#if >
 			    <#elseif num==2>
@@ -148,7 +148,7 @@
 					    </div>
 	            <#else>
 					<div style="margin-top:20px;margin-left:35px">
-					不好意思，暂时没有该类型的题目
+					不好意思，暂时没有阅读题，请联系管理员添加
 					</div>
 	          </#if >
 	            
@@ -179,7 +179,7 @@
 			  </div>
           <#else>
 				<div style="margin-top:20px;margin-left:35px">
-			不好意思，暂时没有该类型的题目
+			不好意思，暂时没有作文，请联系管理员添加
 			</div>
         </#if >
     </#if>

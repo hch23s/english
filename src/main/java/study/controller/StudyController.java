@@ -56,6 +56,8 @@ public class StudyController {
 			if(num!=3 && split[0].equals(split[1])) {//做对时
 				study.setSuccessNum(study.getSuccessNum()+1);
 				study.setAccuracy(study.getSuccessNum()*100/(study.getTopicNum()));
+			}else if (num!=3 && !split[0].equals(split[1])){//做错时
+				study.setAccuracy(study.getSuccessNum()*100/(study.getTopicNum()));
 			}
 		}else {
 			study = new Study();
@@ -65,7 +67,9 @@ public class StudyController {
 			study.setTopicNum(1);
 			if(num!=3 && split[0].equals(split[1])) {//做错时
 				study.setSuccessNum(study.getSuccessNum()+1);
-				study.setAccuracy(study.getSuccessNum()*100/(study.getSuccessNum()));
+				study.setAccuracy(study.getSuccessNum()*100/(study.getTopicNum()));
+			}else if (num!=3 && !split[0].equals(split[1])){//做错时
+				study.setAccuracy(study.getSuccessNum()*100/(study.getTopicNum()));
 			}
 		}
 		studyService.save(study);

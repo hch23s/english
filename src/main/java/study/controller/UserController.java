@@ -111,6 +111,7 @@ public class UserController {
 			//当user1不为空时说明有当前账号，返回重新注册
 			if(user1!=null) {
 				model.put("message","账号已存在");//传到前端页面
+				model.put("user",user);//传到前端页面
 				return "/addUser";
 			}else {
 				model.put("message","创建成功");//创建成功，
